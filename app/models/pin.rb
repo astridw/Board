@@ -1,4 +1,4 @@
 class Pin < ActiveRecord::Base
-  validates :photo, :notes prescence: true
+  validates :notes, :photo, presence: true
   mount_uploader :photo, PhotoUploader
 end
